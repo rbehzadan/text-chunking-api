@@ -1,6 +1,9 @@
-name: Hello World Workflow
+name: Build and Publish Docker Image
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 env:
   IMAGE_NAME: rbehzadan/prose-chunker
