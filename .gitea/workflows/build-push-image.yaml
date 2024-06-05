@@ -5,13 +5,15 @@ on:
     branches:
       - main
 
-env:
-  IMAGE_NAME: rbehzadan/prose-chunker
-  IMAGE_TAG: {CI_COMMIT_TAG}-${CI_PIPELINE_ID}
 
 jobs:
   build-and-publish:
     runs-on: ubuntu22
+
+    env:
+      IMAGE_NAME: rbehzadan/prose-chunker
+      IMAGE_TAG: {CI_COMMIT_TAG}-${CI_PIPELINE_ID}
+
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
