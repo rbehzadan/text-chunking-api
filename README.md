@@ -5,6 +5,7 @@ This project provides a REST API for chunking a given text into pieces of a spec
 ## Features
 
 - Split text into chunks based on the specified maximum number of tokens.
+- Does not split text mid-sentence.
 - Log each request with method, URI, remote address, and duration.
 - Error handling for invalid input and processing errors.
 
